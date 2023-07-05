@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group" id="form-select">
+            <label>Tipo de Circuito</label>
+            <select class="form-control" id="circuit-type">
+                <option data-select-id="2">-</option>
+                <option data-select-id="3">Monofásico</option>
+                <option>Trifásico</option>
+            </select>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th style="width: 10px">#</th>
+                <th>Dados do Circuito</th>
+                <th>Dados</th>
+                <th style="width: 40px">Unidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Tensão Nominal (Vn)</td>
+                <td>
+                    <!--<input type="number" class="form-control" id="nominalTension" placeholder="0">-->
+                    <select class="form-control" id="nominalTension">
+                        <option data-select-id="0">-</option>
+                        <option data-select-id="12">12</option>
+                        <option data-select-id="24">24</option>
+                        <option data-select-id="36">36</option>
+                        <option data-select-id="110">110</option>
+                        <option data-select-id="115">115</option>
+                        <option data-select-id="120">120</option>
+                        <option data-select-id="125">125</option>
+                        <option data-select-id="127">127</option>
+                        <option data-select-id="220">220</option>
+                        <option data-select-id="230">230</option>
+                        <option data-select-id="254">254</option>
+                        <option data-select-id="240">240</option>
+                        <option data-select-id="380">380</option>
+                        <option data-select-id="440">440</option>
+                        <option data-select-id="480">480</option>
+                        <option data-select-id="760">760</option>
+                        <option data-select-id="760">1000</option>
+                        <option data-select-id="13800">13800</option>
+                        <option data-select-id="69000">69000</option>
+                        <option data-select-id="138000">138000</option>
+                    </select>
+                </td>
+                <td><span class="badge">V</span></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Potência (P)</td>
+                <td>
+                    <input type="number" class="form-control rounded-0" id="powerCircuit" placeholder="0">
+                </td>
+                <td><span class="badge">P</span></td>
+            </tr>
+            <td>3.</td>
+            <td>Corrente Nominal (In)</td>
+            <td>
+                <input type="number" class="form-control rounded-0" id="nominalCorrent" placeholder="0">
+            </td>
+            <td><span class="badge">A</span></td>
+            </tr>
+            <td>4.</td>
+            <td>Fator de Potência (fP)</td>
+            <td>
+                <input type="text" class="form-control rounded-0" id="potencialFactor" value="1">
+            </td>
+            <td><span class="badge">-</span></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Corrente de Dim. (Idim)</td>
+                <td>
+                    <input type="number" class="form-control rounded-0" id="dimensionCorrent" readonly>
+                </td>
+                <td><span class="badge">A</span></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Queda de (V) Adm.</td>
+                <td>
+                    <input type="number" class="form-control rounded-0" id="dropTension" value="3">
+                </td>
+                <td><span class="badge">%</span></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Comprimento do Circuito (L)</td>
+                <td>
+                    <input type="number" class="form-control rounded-0" id="circuitLenght" placeholder="0">
+                </td>
+                <td><span class="badge">m</span></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Resistência do Cabo (R)</td>
+                <td>
+                    <input type="number" class="form-control rounded-0" id="cableR" placeholder="0.000" readonly>
+                </td>
+                <td><span class="badge">ohm/km</span></td>
+            </tr>
+            <td>9.</td>
+            <td>Reatância do Cabo (X)</td>
+            <td>
+                <input type="number" class="form-control rounded-0" id="cableX" placeholder="0.000" readonly>
+            </td>
+            <td><span class="badge">ohm/km</span></td>
+            </tr>
+            <td>10.</td>
+            <td>Cabos por Fase</td>
+            <td>
+                <input type="number" class="form-control rounded-0" id="cableFase" value="1">
+            </td>
+            <td><span class="badge">-</span></td>
+            </tr>
+            <td>11.</td>
+            <td>Queda de (V)) Exercida</td>
+            <td>
+                <input type="num" class="form-control rounded-0" id="dropTensionE" placeholder="0" readonly>
+            </td>
+            <td><span class="badge">%</span></td>
+            </tr>
+            <td>12.</td>
+            <td>Seção Adotada</td>
+            <td>
+                <select class="form-control select2 select2-hidden-accessible" id="sectionAdopeted" style="width: 100%;"
+                    data-select2-id="1" tabindex="-1" aria-hidden="true">
+                    <option selected="selected" data-select-id="0">-</option>
+                    <option data-select-id="0,5">0,5</option>
+                    <option data-select-id="1">1</option>
+                    <option data-select-id="1,5">1,5</option>
+                    <option data-select-id="2,5">2,5</option>
+                    <option data-select-id="4">4</option>
+                    <option data-select-id="6">6</option>
+                    <option data-select-id="10">10</option>
+                    <option data-select-id="16">16</option>
+                    <option data-select-id="25">25</option>
+                    <option data-select-id="35">35</option>
+                    <option data-select-id="50">50</option>
+                    <option data-select-id="70">70</option>
+                    <option data-select-id="95">95</option>
+                    <option data-select-id="120">120</option>
+                    <option data-select-id="150">150</option>
+                    <option data-select-id="185">185</option>
+                    <option data-select-id="240">240</option>
+                    <option data-select-id="300">300</option>
+            </td>
+            <td><span class="badge">mm²</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-info" onclick="calcCirc()">Calcular</button>
+    
+</div>
+
+
+{% endblock content %}

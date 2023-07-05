@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+
+    <div class="isa5">
+        <div class="offset-1 col-10 list-div">
+            <h1>Tabela de Identificação Funcional - <strong>Instrumentação</strong></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="2">Primeira Letra</th>
+                        <th colspan="3">Letras Subsequentes</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Variável medida ou Incial</th>
+                        <th>Modificadora</th>
+                        <th>Função de Informação ou Passiva</th>
+                        <th>Função Final</th>
+                        <th>Modificadora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cont in table_data %}
+                    <tr>
+                        <td class="align-th1"> {{cont.0}} </td>
+                        <td class="align-th2"> {{cont.1}} </td>
+                        <td> {{cont.2}} </td>
+                        <td> {{cont.3}} </td>
+                        <td> {{cont.4}} </td>
+                        <td> {{cont.5}} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock content %}
