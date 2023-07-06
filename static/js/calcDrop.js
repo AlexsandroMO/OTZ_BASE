@@ -27,7 +27,7 @@ let cableX = document.getElementById("cableX");
 
 let elementSected = document.getElementById("sectionAdopeted");
 
-console.log("Cable: ", cableR, cableX);
+console.log("Cable: ", cableR, cableX, elementSected);
 
 elementSected.addEventListener("change", function () {
     let selectedValue = elementSected.value;
@@ -135,15 +135,46 @@ function toggleObjeto() {
   */
 
 
-  function toggleDiv() {
-    var div1 = document.getElementById("nominalCorrent");
-    var div2 = document.getElementById("powerCircuit");
+//   function toggleDiv() {
+//     var div1 = document.getElementById("nominalCorrent");
+//     var div2 = document.getElementById("powerCircuit");
 
-    if (div2.style.display === "none") {
-      div1.style.display = "none";
-      div2.style.display = "block";
-    } else {
-      div1.style.display = "block";
-      div2.style.display = "none";
-    }
-  }
+//     if (div2.style.display === "none") {
+//       div1.style.display = "none";
+//       div2.style.display = "block";
+//     } else {
+//       div1.style.display = "block";
+//       div2.style.display = "none";
+//     }
+//   }
+
+
+// if (elementSelected) {
+//   elementSelected.addEventListener("click", suaFuncao);
+// }
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     let selectedValue = elementSected.value;
+//     let varCol1;
+//     let varCol2;
+
+//     for (var i = 0; i < lista.length; i++) {
+//         var sublista = lista[i];
+//         var varCol0 = sublista[0];
+
+//         if (varCol0 === selectedValue) {
+//             varCol1 = sublista[1];
+//             varCol2 = sublista[2];
+//             break;
+//         }
+//     }
+
+//     console.log("A: ", varCol1);
+//     console.log("B: ", varCol2);
+
+//     cableR.value = varCol1;
+//     cableX.value = varCol2;
+
+//     console.log("Valor da coluna 1: " + selectedValue);
+//   });
