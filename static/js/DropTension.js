@@ -25,7 +25,7 @@ console.log(lista);
 let cableR = document.getElementById("cableR");
 let cableX = document.getElementById("cableX");
 
-let elementSected = document.getElementById("sectionAdopeted");
+let elementSected = document.getElementById("sectionChoise");
 
 console.log("Cable: ", cableR, cableX, elementSected);
 

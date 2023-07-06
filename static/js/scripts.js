@@ -17,9 +17,6 @@ function carregarPagina(pagina) {
 carregarPagina("templates/home.html");
 
   // Carrega a página inicial
- function chamaQT(){
-  carregarPagina("templates/calcDrop.html");
- }
 
  function construction(){
   carregarPagina("templates/construction.html");
