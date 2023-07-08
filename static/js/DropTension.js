@@ -46,7 +46,7 @@ elementSected.addEventListener("change", function () {
     }
 
     console.log("A: ", varCol1);
-    console.log("B: ", varCol2);
+    console.log("B: ", varCol2); 
 
     cableR.value = varCol1;
     cableX.value = varCol2;

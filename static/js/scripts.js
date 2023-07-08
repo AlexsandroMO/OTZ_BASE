@@ -14,14 +14,19 @@ function carregarPagina(pagina) {
     xhr.send();
   }
   
-carregarPagina("templates/home.html");
+carregarPagina("home.html");
 
   // Carrega a página inicial
 
- function construction(){
-  carregarPagina("templates/construction.html");
- }
 
- function isa(){
-  carregarPagina("templates/isa-51.html");
- }
+// function construction(){
+//   carregarPagina("templates/construction.html");
+// }
+
+function construction(){
+  carregarPagina("construction.html");
+}
+
+function isa(){
+  carregarPagina("isa-51.html");
+}

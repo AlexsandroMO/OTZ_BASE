@@ -28,71 +28,23 @@ var lista_isa = [
 
 ];
 
-console.log(lista_isa);
-
-let read = document.getElementById("read-list").value
-console.log('>>>>>>>>>>>>>>>>: ',read)
-read.value = "ok";
 
 
-
-var td = document.querySelector("td");
-
-        // Lê o conteúdo da <td> usando textContent
-        var conteudo1 = td.textContent;
-
-        console.log(conteudo1);
-
-        // Seleciona todas as <td>
-        var tds = document.querySelectorAll("td");
-
-        // Lê o conteúdo de cada <td> usando innerHTML
-        tds.forEach(function(td) {
-            var conteudo2 = td.innerHTML;
-            console.log(conteudo2);
-        });
-
-
+var readListElement = document.getElementById("read-list");
+var tableElement = document.getElementById("table");
+//var tableElement = document.createElement("table");
 
 for (var i = 0; i < lista_isa.length; i++) {
-    var row = "<tr>";
+    var rowElement = document.createElement("tr");
     for (var j = 0; j < lista_isa[i].length; j++) {
-        row += "<td>" + lista_isa[i][j] + "</td>";
+        var cellElement = document.createElement("td");
+        cellElement.textContent = lista_isa[i][j];
+        rowElement.appendChild(cellElement);
     }
-    row += "</tr>";
-    document.write(row);
+    tableElement.appendChild(rowElement);
 }
 
-var table = document.createElement("table");
+readListElement.appendChild(tableElement);
 
-        var thead = document.createElement("thead");
-        var headerRow = document.createElement("tr");
 
-        var headers = ["Letra", "Descrição", "Valor A", "Valor B", "Valor C", "Valor D"];
 
-        headers.forEach(function(headerText) {
-            var th = document.createElement("th");
-            th.appendChild(document.createTextNode(headerText));
-            headerRow.appendChild(th);
-        });
-
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
-
-        var tbody = document.createElement("tbody");
-
-        lista_isa.forEach(function(rowData) {
-            var row = document.createElement("tr");
-
-            rowData.forEach(function(cellData) {
-                var cell = document.createElement("td");
-                cell.appendChild(document.createTextNode(cellData));
-                row.appendChild(cell);
-            });
-
-            tbody.appendChild(row);
-        });
-
-        table.appendChild(tbody);
-
-        document.body.appendChild(table);

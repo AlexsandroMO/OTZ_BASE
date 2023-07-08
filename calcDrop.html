@@ -25,16 +25,16 @@
     <!-- <link rel="stylesheet" href="static/plugins/fontawesome-free/all.min.css">
 <link rel="stylesheet" href="static/dist/css/adminlte.min.css"> -->
 
-    <link type="text/css" rel="stylesheet" href="../static/css/reset.css">
-    <link type="text/css" rel="stylesheet" href="../static/css/main.css">
-    <link type="text/css" rel="stylesheet" href="../static/css/styles-drop-calc.css">
-    <link type="text/css" rel="stylesheet" href="../static/css/styles-isa.css">
+    <link type="text/css" rel="stylesheet" href="static/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="static/css/main.css">
+    <link type="text/css" rel="stylesheet" href="static/css/styles-drop-calc.css">
+    <link type="text/css" rel="stylesheet" href="static/css/styles-isa.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a href="/" class="logo">
-            <img src="../static/media/LOGO_OTZ.png" alt="Logo da empresa" width=250 height=100>
+            <img src="static/media/LOGO_OTZ.png" alt="Logo da empresa" width=250 height=100>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,10 +43,10 @@
                     <a class="nav-link" onclick="chamaQT()">Calculos QT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../templates/calcDrop.html">ISA 5.1</a>
+                    <a class="nav-link" onclick="isa()">ISA 5.1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="templates/calcDrop.html">Entrar</a>
+                    <a class="nav-link" onclick="construction()">Entrar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="construction()">Sobre nós</a>
@@ -59,12 +59,8 @@
     </nav>
 
     <div class="card-body">
-
-
-
         <div class="card-body">
             <div class="offset-1 col-10 list-div">
-
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group" id="form-select">
@@ -249,8 +245,8 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="../static/js/scripts.js"></script>
-    <script src="../static/js/DropTension.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/DropTension.js"></script>
 
 
 </body>
