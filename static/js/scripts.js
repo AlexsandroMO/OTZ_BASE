@@ -26,3 +26,7 @@ carregarPagina("templates/home.html");
 function construction(){
   carregarPagina("templates/construction.html");
 }
+
+function home(){
+  carregarPagina("templates/home.html");
+}
