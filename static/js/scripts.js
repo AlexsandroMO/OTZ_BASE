@@ -14,7 +14,7 @@ function carregarPagina(pagina) {
     xhr.send();
   }
   
-carregarPagina("home.html");
+carregarPagina("templates/home.html");
 
   // Carrega a página inicial
 
@@ -24,9 +24,5 @@ carregarPagina("home.html");
 // }
 
 function construction(){
-  carregarPagina("construction.html");
-}
-
-function isa(){
-  carregarPagina("isa-51.html");
+  carregarPagina("templates/construction.html");
 }
