@@ -69,7 +69,9 @@ function pegarTexto(){
     //textoOriginal = textoOriginal.replace(",", "Universo");
     console.log(listaSemDuplicatas);
     cont += 1;
-    
+  
+  textareaElement.innerHTML = '';
+
   }
   for (let a = 0; a < listaSemDuplicatas.length; a++) {
     textareaElement.innerHTML += `${listaSemDuplicatas[a]}, `;
