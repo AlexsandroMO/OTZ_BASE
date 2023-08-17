@@ -67,35 +67,71 @@
             </ul>
         </div>
     </nav>
+    <div class="card-body">
+        <div class="row">
+            <div class="offset-1 col-10 list-div">
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <h3 class="card-title">Change Text</h3>
+                    </div>
 
-	<div class="card-body">
-	<div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Type the Text</label>
+                            <input type="text" class="form-control" id="meuInput" placeholder="Enter ...">
+                        </div>
+                    </div>
 
-		<div class="offset-1 col-10 list-div">
-			<img src="https://images.idgesg.net/images/idge/imported/imageapi/2022/05/26/23/hand_controls_interconnecting_gears_process_automation_machinery_mechanism_efficiency_by_anawat_s_gettyimages-1163061322_2400x1600-100858595-large-100928471-large.jpg" alt="AUT SOLUTIONS" width=700 height=400 id="img-home">
-			<h1>Bem vindo a Engineering Solutions!</h1>
-			<p>Sua plataforma de soluções em engenharia</p>
-		</div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Text Rules Split</label>
+                            <input type="text" class="form-control" id="meuInput-2" placeholder="Enter ...">
+                        </div>
+                    </div>
 
-	</div>
-</div>
+                    <!--<div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Text Rules Select</label>
+                            <input type="text" class="form-control" id="meuInput-3" placeholder="Enter ...">
+                        </div>
+                    </div>-->
 
-</div>    
-<footer>
-	<p>Engineering Solutions</p>
-</footer>
-</div>
+                    <div class="card-body">
+                        <form id="some-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Nome Sugerido</label>
+                                        <textarea class="form-control" id="meuTextarea" rows="3" placeholder="Enter ..."
+                                            disabled=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
 
-<script src="https://code.jquery.com/jquery-3.4.0.min.js"
-integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
-crossorigin="anonymous"></script>
+                            <button type="submit" class="btn btn-primary" onclick="pegarTexto()">Submit</button>
 
-<script src="static/js/scripts.js"></script>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Engineering Solutions</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="../static/js/isa51.js"></script>
+    <script src="../static/js/scripts.js"></script>
+    <script src="../static/js/rule-text.js"></script>
+
 
 </body>
 
 </html>
-
